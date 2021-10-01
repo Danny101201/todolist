@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ListItems from './ListItem'
 function Context({ setItems, items }) {
 

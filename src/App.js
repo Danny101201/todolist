@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useState } from 'react'
 import Header from './components/Header'
 import Context from './components/Context'
