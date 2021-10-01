@@ -5,7 +5,8 @@ import Footer from './components/Footer'
 import Additem from './components/Additem'
 import Search from './components/Search'
 function App() {
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppingList')));
+  const initionalValue = JSON.parse(localStorage.getItem('shoppingList')) || ''
+  const [items, setItems] = useState(initionalValue);
   const [newItem, setNewItem] = useState('')
   const [search, setSearch] = useState('')
 
@@ -35,8 +36,8 @@ function App() {
         search={search}
         setSearch={setSearch}
       />
-      <Context 
-        items={items.filter(item=>item.item.toLowerCase().includes(search.toLowerCase()))} 
+      <Context
+        items={items ? items.filter(item => item.item.toLowerCase().includes(search.toLowerCase())) : ''}
         setItems={setItems}
       />
       <Footer lengths={items.length}></Footer>
