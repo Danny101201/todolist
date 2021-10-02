@@ -13,6 +13,7 @@ function App() {
   const addItems = (item) => {
     const id = items.length ? items[items.length - 1].id + 1 : 1
     const newItem = { id, checked: false, item }
+    if (item.startsWith('http')) newItem.isLink = true
     const listItem = [...items, newItem]
     setItems(listItem)
     localStorage.setItem('shoppingList', JSON.stringify(listItem))

@@ -11,10 +11,18 @@ function ListItem({ item, handleClick, handleDelete }) {
                     onClick={() => handleClick(item.id)}
                     checked={item.checked}
                 />
-                <label
-                    style={(item.checked) ? { textDecoration: 'line-through' } : null}
-                    onDoubleClick={() => handleClick(item.id)}
-                >{item.item}</label>
+                {item.isLink ? (
+                    <a
+                        href={item.item}
+                        target="_blank"
+                        style={item.checked ? { textDecoration: 'line-through' } : { textDecoration: 'none' }}
+                    >{item.item}</a>
+                ) : (
+                    <label
+                        style={(item.checked) ? { textDecoration: 'line-through' } : null}
+                        onDoubleClick={() => handleClick(item.id)}
+                    >{item.item}</label>
+                )}
                 <FaRegTrashAlt
                     onClick={() => handleDelete(item.id)}
                     role="button"

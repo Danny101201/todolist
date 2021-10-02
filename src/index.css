@@ -97,7 +97,8 @@ ul li::before {
   text-decoration: underline;
 }
 
-.item > label {
+.item > label, 
+.item > a {
   font-size: 0.8rem;
   flex-grow: 1;
 }
