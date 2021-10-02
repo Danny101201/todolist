@@ -10,7 +10,7 @@ function Search({ search,setSearch}) {
                 role="searchbox"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                placeholder="Search Items"
+                placeholder="搜尋"
             />
         </form>
     )

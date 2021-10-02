@@ -12,7 +12,7 @@ function Additem({ newItem, setNewItem, handleSubmit }) {
                 ref={inputRef}
                 value={newItem}
                 onChange={e => setNewItem(e.target.value)}
-                placeholder="Add Item"
+                placeholder="新增"
                 required
             />
             <button
