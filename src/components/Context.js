@@ -26,7 +26,7 @@ function Context({ setItems, items }) {
                 </ul>
 
             ) : (
-                <p style={{ marginTop: '2rem' }}>Your lists is empty</p>
+                <p style={{ marginTop: '2rem' }}>清單已清空</p>
             )}
         </main>
     )

@@ -4,9 +4,9 @@ function Header({ name }) {
     return (
         <header>
             <h1>
-                Home List
+                清單
             </h1>
-            <p>Hellow -{name}</p>
+            <p>這是帥氣的 -{name}</p>
         </header>
     )
 }

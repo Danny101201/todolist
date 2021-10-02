@@ -3,7 +3,7 @@ import React from 'react'
 function Search({ search,setSearch}) {
     return (
         <form className="searchForm" onSubmit={e=>e.preventDefault()}>
-            <label htmlFor="search">Search</label>
+            <label htmlFor="search">搜尋</label>
             <input 
                 type="text" 
                 id="search"

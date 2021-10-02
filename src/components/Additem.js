@@ -4,7 +4,7 @@ function Additem({ newItem, setNewItem, handleSubmit }) {
     const inputRef = useRef()
     return (
         <form className="addForm" onSubmit={handleSubmit}>
-            <label htmlFor="addItem">Add Item</label>
+            <label htmlFor="addItem">新增</label>
             <input
                 autoFocus
                 id="addItem"
