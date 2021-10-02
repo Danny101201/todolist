@@ -15,6 +15,7 @@ function ListItem({ item, handleClick, handleDelete }) {
                     <a
                         href={item.item}
                         target="_blank"
+                        rel="noreferrer"
                         style={item.checked ? { textDecoration: 'line-through' } : { textDecoration: 'none' }}
                     >{item.item}</a>
                 ) : (
